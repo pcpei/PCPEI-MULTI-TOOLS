@@ -403,7 +403,7 @@ def main():
                     manage_windows_services()
                     input("Appuyez sur Entrée pour continuer...")
                 elif choice == '13':
-                    url = "https://www.leetchi.com/fr/c/soutiens-3138357?utm_source=copylink&utm_medium=social_sharing"
+                    url = "https://streamelements.com/pcpei/tip"
                     webbrowser.open(url)
                     input("Appuyez sur Entrée pour continuer...")
                 elif choice == '14':
