@@ -1,5 +1,5 @@
 # Pcpei
-# coco8900
+# pcpei
 # Multi-Tools
 
 import os
@@ -30,7 +30,7 @@ gradient = [
 ]
 
 # Version actuelle du script
-CURRENT_VERSION = "1.0.0"
+CURRENT_VERSION = "1.0.1"
 
 def is_admin():
     try:
@@ -191,15 +191,15 @@ def check_for_updates():
     try:
         print(Fore.YELLOW + "Vérification des mises à jour...")
         # Remplacez cette URL par l'URL de votre dépôt GitHub
-        github_url = "https://raw.githubusercontent.com/coco8900/PCPEI-MULTI-TOOLS/refs/heads/version-fix/version.txt"
+        github_url = "https://raw.githubusercontent.com/pcpei/PCPEI-MULTI-TOOLS/refs/heads/version-fix/version.txt"
         response = requests.get(github_url)
         if response.status_code == 200:
             latest_version = response.text.strip()
             print(Fore.GREEN + f"Dernière version disponible : {latest_version}")
             if latest_version != CURRENT_VERSION:
                 print(Fore.RED + "Veuillez mettre à jour l'outil avant de continuer.")
-                print(Fore.RED + f"Téléchargez la dernière version depuis : https://github.com/coco8900/PCPEI-MULTI-TOOLS")
-                webbrowser.open("https://github.com/coco8900/PCPEI-MULTI-TOOLS")
+                print(Fore.RED + f"Téléchargez la dernière version depuis : https://github.com/pcpei/PCPEI-MULTI-TOOLS")
+                webbrowser.open("https://github.com/pcpei/PCPEI-MULTI-TOOLS")
                 sys.exit(0)  # Quitter le script
             else:
                 print(Fore.GREEN + "Votre version est à jour.")
@@ -320,7 +320,7 @@ def print_menu(page):
 ██╔═══╝ ██║     ██╔═══╝ ██╔══╝  ██║
 ██║     ╚██████╗██║     ███████╗██║
 ╚═╝      ╚═════╝╚═╝     ╚══════╝╚═╝
-    https://github.com/coco8900
+    https://github.com/pcpei
     """
     lines = ascii_art.strip().split('\n')
     for i, line in enumerate(lines):
